@@ -2,15 +2,27 @@ import React, { use, useState } from "react";
 import calender from "../../assets/ri_calendar-line.png";
 import { toast } from "react-toastify";
 
-const CustomerTicket = ({ ticketsPromise, selectedTicket, setSelectedTicket }) => {
+const CustomerTicket = ({
+   ticketsPromise,
+   selectedTicket,
+   setSelectedTicket,
+   resolvedTicket,
+   setResolvedTicket,
+}) => {
    const ticketsData = use(ticketsPromise);
    const [toggle, setToggle] = useState(true);
+   const [toggleresolve, setToggleResolve] = useState(true);
 
    const handleSelectedTicket = (ticketData) => {
+      setToggle(false);
       setSelectedTicket([...selectedTicket, ticketData]);
       toast("Ticket added successfully to Task Status");
    };
-   const handleComplete = () => {
+   const handleComplete = (ticket) => {
+      setToggleResolve(false);
+      const fileterdData = selectedTicket.filter((t) => t.id !== ticket.id);
+      setSelectedTicket(fileterdData);
+      setResolvedTicket([...resolvedTicket, ticket]);
       toast("Task completed");
    };
 
@@ -27,7 +39,7 @@ const CustomerTicket = ({ ticketsPromise, selectedTicket, setSelectedTicket }) =
                            key={tickets.id}
                            className={`md:w-[440px] h-[190px] shadow-gray-400 bg-white rounded-xl py-3 px-3 mb-2 ${selectedTicket.some((ticket) => ticket.id === tickets.id) ? "border-2 border-blue-500" : "border"}`}
                            onClick={() => {
-                              (handleSelectedTicket(tickets), setToggle(false));
+                              handleSelectedTicket(tickets);
                            }}
                         >
                            <div className="flex justify-between">
@@ -67,7 +79,7 @@ const CustomerTicket = ({ ticketsPromise, selectedTicket, setSelectedTicket }) =
                                 >
                                    <h1 className="font-bold">{ticket.title}</h1>
                                    <button
-                                      onClick={() => handleComplete()}
+                                      onClick={() => handleComplete(ticket)}
                                       className="btn btn-block btn-success mt-3"
                                    >
                                       Complete
@@ -78,9 +90,14 @@ const CustomerTicket = ({ ticketsPromise, selectedTicket, setSelectedTicket }) =
                   </div>
                   <div>
                      <h1 className="text-xl font-bold">Resolved Task</h1>
-                     <p>No resolved tasks yet.</p>
-                     <div className="bg-blue-200 w-[350px] h-[60pxn] rounded-xl px-2.5 py-4 showdow-gray-300 mt-3">
-                        <h1 className="font-bold">Incorrect Billing Address</h1>
+                     <div className="mb-2">
+                        {toggleresolve === true
+                           ? "No resolved tasks yet."
+                           : resolvedTicket.map((ticket) => (
+                                <div className="bg-blue-200 w-[350px] h-[60pxn] rounded-xl px-2.5 py-4 showdow-gray-300 mt-3">
+                                   <h1 className="font-bold">{ticket.title}</h1>
+                                </div>
+                             ))}
                      </div>
                   </div>
                </div>
