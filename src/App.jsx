@@ -1,12 +1,12 @@
 import "./App.css";
-import Baner from "./Component/Banner/Baner";
+import Banner from "./Component/Banner/Banner";
 import Navbar from "./Component/Navbar/Navbar";
 
 function App() {
    return (
       <>
          <Navbar></Navbar>
-         <Baner></Baner>
+         <Banner></Banner>
       </>
    );
 }

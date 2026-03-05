@@ -1,0 +1,137 @@
+[
+   {
+      "id": "#1001",
+      "title": "Login Issues - Can't Access Account",
+      "description": "Customer is unable to log in to their account. They have tried resetting their password multiple times but still cannot access it.",
+      "customer": "John Smith",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2024-01-15"
+   },
+   {
+      "id": "#1002",
+      "title": "Payment Failed During Checkout",
+      "description": "Customer reports payment failure when attempting to complete a purchase using a credit card.",
+      "customer": "Emily Johnson",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2024-01-16"
+   },
+   {
+      "id": "#1003",
+      "title": "Delayed Order Delivery",
+      "description": "Order was expected within 3 days but has not arrived after 7 days.",
+      "customer": "Michael Brown",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2024-01-17"
+   },
+   {
+      "id": "#1004",
+      "title": "Refund Not Processed",
+      "description": "Customer returned the product two weeks ago but has not received the refund yet.",
+      "customer": "Sophia Davis",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2024-01-18"
+   },
+   {
+      "id": "#1005",
+      "title": "App Crashes on Startup",
+      "description": "Mobile application crashes immediately after launching on Android devices.",
+      "customer": "Daniel Wilson",
+      "priority": "Critical",
+      "status": "In Progress",
+      "createdAt": "2024-01-19"
+   },
+   {
+      "id": "#1006",
+      "title": "Incorrect Billing Amount",
+      "description": "Customer was charged twice for the same subscription plan.",
+      "customer": "Olivia Martinez",
+      "priority": "High",
+      "status": "Resolved",
+      "createdAt": "2024-01-20"
+   },
+   {
+      "id": "#1007",
+      "title": "Unable to Update Profile Information",
+      "description": "Changes made to profile information are not being saved.",
+      "customer": "James Anderson",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2024-01-21"
+   },
+   {
+      "id": "#1008",
+      "title": "Product Received Damaged",
+      "description": "Customer received a damaged product and is requesting a replacement.",
+      "customer": "Isabella Thomas",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2024-01-22"
+   },
+   {
+      "id": "#1009",
+      "title": "Subscription Cancellation Issue",
+      "description": "Customer is unable to cancel their subscription from the dashboard.",
+      "customer": "William Taylor",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2024-01-23"
+   },
+   {
+      "id": "#1010",
+      "title": "Website Loading Very Slowly",
+      "description": "Customer reports that the website takes more than 30 seconds to load.",
+      "customer": "Mia Moore",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "2024-01-24"
+   },
+   {
+      "id": "#1011",
+      "title": "Email Notifications Not Received",
+      "description": "Customer is not receiving verification and notification emails.",
+      "customer": "Benjamin White",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdAt": "2024-01-25"
+   },
+   {
+      "id": "#1012",
+      "title": "Discount Code Not Working",
+      "description": "Promo code shows invalid even though it is within the validity period.",
+      "customer": "Charlotte Harris",
+      "priority": "Low",
+      "status": "Resolved",
+      "createdAt": "2024-01-26"
+   },
+   {
+      "id": "#1013",
+      "title": "Error 500 on Dashboard",
+      "description": "Customer encounters server error 500 when accessing the dashboard.",
+      "customer": "Lucas Martin",
+      "priority": "Critical",
+      "status": "Open",
+      "createdAt": "2024-01-27"
+   },
+   {
+      "id": "#1014",
+      "title": "Two-Factor Authentication Not Working",
+      "description": "Customer is not receiving OTP for two-factor authentication.",
+      "customer": "Amelia Thompson",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2024-01-28"
+   },
+   {
+      "id": "#1015",
+      "title": "Unable to Upload Documents",
+      "description": "File upload fails with an unknown error message.",
+      "customer": "Henry Clark",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2024-01-29"
+   }
+]
