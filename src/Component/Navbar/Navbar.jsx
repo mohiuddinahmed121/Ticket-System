@@ -72,7 +72,7 @@ const Navbar = () => {
             </ul>
          </div>
          <div className="btn bg-[#422AD5]">
-            <img src={plus_icon} alt="New Ticket" />
+            <img src={plus_icon} alt="" />
             <a className="text-white">New Ticket</a>
          </div>
       </div>

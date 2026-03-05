@@ -18,14 +18,14 @@ const CustomerTicket = ({ ticketsPromise, selectedTicket, setSelectedTicket }) =
       <div className="">
          <div className="max-w-[1300px] mx-auto py-10">
             <h2 className="text-3xl font-bold my-5">Customer Tickets</h2>
-            <div className="flex justify-between gap-5">
-               <div className="grid grid-cols-2  gap-5">
+            <div className="md:flex justify-between gap-5">
+               <div className="grid md:grid-cols-2 grid-cols-1  gap-5">
                   {
                      /* Map through the ticketsData and render each ticket */
                      ticketsData.map((tickets) => (
                         <div
                            key={tickets.id}
-                           className={`w-[440px] h-[190px] shadow-gray-400 bg-white rounded-xl py-3 px-3 mb-2 ${selectedTicket.some((ticket) => ticket.id === tickets.id) ? "border-2 border-blue-500" : "border"}`}
+                           className={`md:w-[440px] h-[190px] shadow-gray-400 bg-white rounded-xl py-3 px-3 mb-2 ${selectedTicket.some((ticket) => ticket.id === tickets.id) ? "border-2 border-blue-500" : "border"}`}
                            onClick={() => {
                               (handleSelectedTicket(tickets), setToggle(false));
                            }}
@@ -63,7 +63,7 @@ const CustomerTicket = ({ ticketsPromise, selectedTicket, setSelectedTicket }) =
                            : selectedTicket.map((ticket) => (
                                 <div
                                    key={ticket.id}
-                                   className="w-[350px] h-[120px] bg-white rounded-xl shadow-gray-300 py-5 px-5 mb-2"
+                                   className="md:w-[350px] h-[120px] bg-white rounded-xl shadow-gray-300 py-5 px-5 mb-2"
                                 >
                                    <h1 className="font-bold">{ticket.title}</h1>
                                    <button
