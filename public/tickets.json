@@ -2,7 +2,7 @@
    {
       "id": "#1001",
       "title": "Login Issues - Can't Access Account",
-      "description": "Customer is unable to log in to their account. They have tried resetting their password multiple times but still cannot access it.",
+      "description": "Customer is unable to log in to their account. They have tried resetting their password multiple times.",
       "customer": "John Smith",
       "priority": "High",
       "status": "Open",
@@ -128,7 +128,7 @@
    {
       "id": "#1015",
       "title": "Unable to Upload Documents",
-      "description": "File upload fails with an unknown error message.",
+      "description": "File upload fails with an unknown error message but still cannot access it.",
       "customer": "Henry Clark",
       "priority": "Medium",
       "status": "Open",
