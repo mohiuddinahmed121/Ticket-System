@@ -27,7 +27,7 @@ const CustomerTicket = ({
    };
 
    return (
-      <div className="">
+      <div className="text-black">
          <div className="max-w-[1300px] mx-auto py-10">
             <h2 className="text-3xl font-bold my-5">Customer Tickets</h2>
             <div className="md:flex justify-between gap-5">
